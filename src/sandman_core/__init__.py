@@ -1,1 +1,1 @@
-"""The main application for Sandman."""
+"""The core library for Sandman."""
