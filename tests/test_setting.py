@@ -5,7 +5,7 @@ import shutil
 
 import pytest
 
-import sandman_main.setting as setting
+import sandman_core.setting as setting
 
 
 def _check_default_settings(test_settings: setting.Settings) -> None:

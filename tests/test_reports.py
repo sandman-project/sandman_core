@@ -5,8 +5,8 @@ import pathlib
 
 import whenever
 
-import sandman_main.controls as controls
-import sandman_main.reports as reports
+import sandman_core.controls as controls
+import sandman_core.reports as reports
 import tests.test_time_util as test_time_util
 
 

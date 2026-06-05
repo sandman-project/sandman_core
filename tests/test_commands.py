@@ -1,6 +1,6 @@
 """Tests commands."""
 
-import sandman_main.commands as commands
+import sandman_core.commands as commands
 
 
 def test_invalid_intents() -> None:

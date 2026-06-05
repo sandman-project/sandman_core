@@ -6,9 +6,9 @@ import pathlib
 import pytest
 import whenever
 
-import sandman_main.commands as commands
-import sandman_main.reports as reports
-import sandman_main.routines as routines
+import sandman_core.commands as commands
+import sandman_core.reports as reports
+import sandman_core.routines as routines
 import tests.test_time_util as test_time_util
 
 _default_delay_ms = -1

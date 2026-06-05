@@ -1,6 +1,6 @@
 """Tests GPIO."""
 
-import sandman_main.gpio as gpio
+import sandman_core.gpio as gpio
 
 
 def test_gpio_initialization() -> None:

@@ -5,7 +5,7 @@ import typing
 import pytest
 import whenever
 
-import sandman_main.time_util as time_util
+import sandman_core.time_util as time_util
 
 
 class TestTimer(time_util.Timer):

@@ -6,10 +6,10 @@ import pathlib
 import pytest
 import whenever
 
-import sandman_main.commands as commands
-import sandman_main.controls as controls
-import sandman_main.gpio as gpio
-import sandman_main.reports as reports
+import sandman_core.commands as commands
+import sandman_core.controls as controls
+import sandman_core.gpio as gpio
+import sandman_core.reports as reports
 import tests.test_time_util as test_time_util
 
 _default_name = ""
