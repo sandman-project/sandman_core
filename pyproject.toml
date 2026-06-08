@@ -8,7 +8,6 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
   "gpiod>=2.4.2",
-  "paho-mqtt>=2.1.0",
   "tzdata>=2026.2",
   "whenever>=0.10.0",
 ]
@@ -61,5 +60,4 @@ ignore = [
 dev = [
     "mypy>=2.1.0",
     "pytest>=9.0.3",
-    "types-paho-mqtt>=1.6.0.20240321",
 ]
