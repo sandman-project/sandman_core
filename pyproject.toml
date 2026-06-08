@@ -1,6 +1,6 @@
 [project]
 name = "sandman_core"
-version = "1.0.3"
+version = "1.0.0"
 description = "Core library for the Sandman bed controller."
 authors = [
   { name="Shawn Lindberg", email="shawn.lindberg@gmail.com" },
