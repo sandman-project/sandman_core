@@ -128,6 +128,18 @@ class ControlConfig:
 
         return True
 
+    def get_as_json(self) -> dict[str, object]:
+        """Get the JSON representation of the config."""
+        config_json = {
+            "name": self.__name,
+            "upGPIOLine": self.__up_gpio_line,
+            "downGPIOLine": self.__down_gpio_line,
+            "movingDurationMS": self.__moving_duration_ms,
+            "coolDownDurationMS": self.__cool_down_duration_ms,
+        }
+
+        return config_json
+
     def __eq__(self, other: object) -> bool:
         """Check whether this config and another have equal values."""
         if not isinstance(other, ControlConfig):
@@ -259,13 +271,7 @@ class ControlConfig:
             )
             return
 
-        config_json = {
-            "name": self.__name,
-            "upGPIOLine": self.__up_gpio_line,
-            "downGPIOLine": self.__down_gpio_line,
-            "movingDurationMS": self.__moving_duration_ms,
-            "coolDownDurationMS": self.__cool_down_duration_ms,
-        }
+        config_json = self.get_as_json()
 
         try:
             with open(filename, "w") as file:
